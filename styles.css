@@ -1,5 +1,7 @@
 body{
     background: linear-gradient(to right, wheat 0%, wheat 25%, white 25%, white 75%, wheat 75%, wheat 100%);
+    margin-left: 30%;
+    margin-right: 30%;
     text-align: left;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
