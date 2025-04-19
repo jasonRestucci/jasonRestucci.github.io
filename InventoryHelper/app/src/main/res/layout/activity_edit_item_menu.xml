@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EditItemMenu"
+    android:background="@color/greenLight">
+
+    <EditText
+        android:id="@+id/editTextNewName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:hint="Edit Name"
+        android:inputType="text"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonDelete" />
+
+    <EditText
+        android:id="@+id/editTextNewQty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="Edit Quantity"
+        android:inputType="text"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextNewName" />
+
+    <EditText
+        android:id="@+id/editTextNewCategory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="Edit Category"
+        android:inputType="text"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextNewQty" />
+
+    <Button
+        android:id="@+id/buttonUpdate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Update"
+        android:textColor="@color/white"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextNewNotes" />
+
+    <Button
+        android:id="@+id/buttonBack3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:text="Back"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:textColor="@color/white"/>
+
+    <Button
+        android:id="@+id/buttonDelete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="DELETE"
+        android:textColor="@color/red"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/divider3"
+        tools:visibility="visible" />
+
+    <TextView
+        android:id="@+id/textItemNameTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Item Name:"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        app:layout_constraintEnd_toStartOf="@+id/textItemQtyTitle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonBack3" />
+
+    <TextView
+        android:id="@+id/textCurrentCategory"
+        android:layout_width="77dp"
+        android:layout_height="17dp"
+        android:layout_marginTop="8dp"
+        android:text="Category"
+        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+        app:layout_constraintEnd_toEndOf="@+id/textItemCategoryTitle"
+        app:layout_constraintHorizontal_bias="0.918"
+        app:layout_constraintStart_toEndOf="@+id/textCurrentQty"
+        app:layout_constraintTop_toBottomOf="@+id/textItemCategoryTitle" />
+
+    <TextView
+        android:id="@+id/textItemCategoryTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Item Category"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textItemQtyTitle"
+        app:layout_constraintTop_toBottomOf="@+id/buttonBack3" />
+
+    <TextView
+        android:id="@+id/textCurrentQty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Quantity"
+        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.499"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textItemQtyTitle" />
+
+    <TextView
+        android:id="@+id/textCurrentName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Name"
+        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+        app:layout_constraintEnd_toStartOf="@+id/textCurrentQty"
+        app:layout_constraintHorizontal_bias="0.103"
+        app:layout_constraintStart_toStartOf="@+id/textItemNameTitle"
+        app:layout_constraintTop_toBottomOf="@+id/textItemNameTitle" />
+
+    <TextView
+        android:id="@+id/textItemQtyTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Item Quantity:"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonBack3" />
+
+    <View
+        android:id="@+id/divider3"
+        android:layout_width="839dp"
+        android:layout_height="1dp"
+        android:layout_marginTop="8dp"
+        android:background="?android:attr/listDivider"
+        app:layout_constraintTop_toBottomOf="@+id/textNotes"
+        tools:layout_editor_absoluteX="1dp" />
+
+    <TextView
+        android:id="@+id/textNotesTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="24dp"
+        android:text="Notes:"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textCurrentName" />
+
+    <TextView
+        android:id="@+id/textNotes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Life before death, strength before weakness, journey before destination"
+        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+        app:layout_constraintEnd_toEndOf="@+id/textItemCategoryTitle"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/textItemNameTitle"
+        app:layout_constraintTop_toBottomOf="@+id/textNotesTitle" />
+
+    <EditText
+        android:id="@+id/editTextNewNotes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="Edit Notes"
+        android:inputType="text"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextNewCategory" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
