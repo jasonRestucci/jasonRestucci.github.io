@@ -1,0 +1,21 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.CS360_JasonRestucci_Option1_ProjectTwo" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+        <item name="colorPrimary">@color/darkGrey</item>
+        <item name="colorPrimaryVariant">@color/black</item>
+        <item name="colorOnPrimary">@color/darkGrey</item>
+    </style>
+
+    <style name="Theme.CS360_JasonRestucci_Option1_ProjectTwo" parent="Base.Theme.CS360_JasonRestucci_Option1_ProjectTwo" />
+
+    <style name="Theme.CS360_JasonRestucci_Option1_ProjectTwo.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="Theme.CS360_JasonRestucci_Option1_ProjectTwo.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="Theme.CS360_JasonRestucci_Option1_ProjectTwo.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+</resources>
