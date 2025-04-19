@@ -1,6 +1,7 @@
 body{
     margin-left: 30%;
     margin-right: 30%;
-    background: wheat;
+    background: linear-gradient(to right, wheat 0%, wheat 30%, white 30%, white 70%, white 100%);
     text-align: left;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
